@@ -28,7 +28,7 @@ describe('AppComponent', () => {
     expect(app.newTodo instanceof Todo).toBeTruthy();
   }));
 
-  it('should display "Todos" in h1 tag', async(() => {
+  it('should display "ToDo" in h1 tag', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
