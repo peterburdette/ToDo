@@ -20,8 +20,10 @@ export class AppComponent {
 
   // Service is now available as this.todoDataService
   addTodo() {
-    this.todoDataService.addTodo(this.newTodo);
-    this.newTodo = new Todo();
+    if (this.newTodo.title.length != 0) {
+      this.todoDataService.addTodo(this.newTodo);
+      this.newTodo = new Todo();
+    }
   }
   
   toggleTodoComplete(todo) {
