@@ -1,6 +1,6 @@
 <section class="todoapp">
   <header class="header">
-    <h1>To Do&rsquo;s</h1>
+    <h1>ToDo</h1>
     <input class="new-todo" placeholder="What needs to be done?" autofocus="" [(ngModel)]="newTodo.title" (keyup.enter)="addTodo()">
     <button class="add" [disabled]="newTodo.title.length == 0" (click)="addTodo()">+</button>
   </header>
